@@ -10,6 +10,8 @@ using osu.Framework.Graphics.Sprites;
 using osu.Framework.Graphics.Textures;
 using osu.Framework.Localisation;
 using osuTK;
+using Vignette.Camera;
+using Vignette.Camera.Graphics;
 using SixLabors.ImageSharp.PixelFormats;
 using System;
 using Vignette.Camera.Platform;
@@ -45,6 +47,7 @@ namespace Vignette.Game.Settings.Sections
                     Label = "Camera",
                     Children = new Drawable[]
                     {
+                        new CameraTrackingPreview(),
                         new SettingsDropdown<string>
                         {
                             Icon = SegoeFluent.Camera,
