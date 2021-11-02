@@ -40,8 +40,7 @@ namespace Vignette.Game.Settings.Sections
         {
             Children = new Drawable[]
             {
-            	new CameraPreview(),
-            	new SettingsSubSection
+                new SettingsSubSection
                 {
                     Label = "Camera",
                     Children = new Drawable[]
